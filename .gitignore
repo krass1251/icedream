@@ -1,0 +1,18 @@
+#IDE
+**/.idea
+**/.vscode
+**/.ac-php-conf.json
+**/.tmp
+
+# System Files
+**/.DS_Store
+**/Thumbs.db
+
+#all node modules
+**/node_modules/
+
+#all dist
+**/dist/
+
+
+
