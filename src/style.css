@@ -87,6 +87,15 @@ header {
   box-shadow: 0px 4px 16px 0px rgba(0, 104, 141, 0.6);
   backdrop-filter: blur(4px);
 }
+header .hiding-content {
+  width: 100%;
+  justify-content: space-between;
+  align-items: normal;
+  display: flex;
+}
+header .hiding-content-btn-toggler {
+  display: none;
+}
 header .logo-box {
   max-width: 135px;
   width: 100%;
@@ -1105,6 +1114,286 @@ footer .container .bottom_section .copyright {
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 575px) {
+  .btn-variant-1 {
+    max-width: 150px;
+    font-size: 18px;
+    height: 30px;
+  }
+  header {
+    padding: 7px 25px;
+  }
+  header.opened {
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: none;
+  }
+  header.opened .hiding-content-btn-toggler span {
+    display: none;
+  }
+  header.opened .hiding-content-btn-toggler::after, header.opened .hiding-content-btn-toggler::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  header.opened .hiding-content-btn-toggler::after {
+    rotate: 45deg;
+    top: 19px;
+    left: 9px;
+  }
+  header.opened .hiding-content-btn-toggler::before {
+    rotate: 135deg;
+    left: -10px;
+    top: 18px;
+  }
+  header.opened .hiding-content {
+    justify-content: center;
+    align-items: normal;
+    display: flex;
+    flex-direction: column;
+  }
+  header .hiding-content {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    background: rgba(254, 255, 187, 0.6);
+    backdrop-filter: blur(4px);
+    max-width: 1316px;
+    gap: 15px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+  }
+  header .hiding-content nav {
+    width: 70%;
+    margin: 0 auto;
+  }
+  header .hiding-content .btn-variant-1 {
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  header .hiding-content-btn-toggler {
+    position: relative;
+    cursor: pointer;
+    width: 27px;
+    height: 20px;
+    justify-content: space-between;
+    align-items: normal;
+    display: flex;
+    flex-direction: column;
+  }
+  header .hiding-content-btn-toggler span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+  }
+  header .hiding-content-btn-toggler::before, header .hiding-content-btn-toggler::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+  }
+  header .btn-variant-1 {
+    font-size: 14px;
+  }
+  header nav {
+    gap: 15px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  header nav a {
+    font-size: 14px;
+  }
+  header .logo-box {
+    max-width: 75px;
+  }
+  .hero .top-section .hero-text {
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    top: 230px;
+  }
+  .hero .top-section .avatar {
+    width: 360px;
+    right: 0;
+    left: 0;
+    top: -30px;
+  }
+  main .tutorial .title-box h2,
+  main .tutorial .title-box .title {
+    font-size: 32px;
+  }
+  main .tutorial .title-box .title {
+    top: 4px;
+  }
+  main .tutorial .subtitle {
+    font-size: 24px;
+  }
+  main .tutorial .steps {
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  main .tutorial .steps .step {
+    height: auto;
+  }
+  main .presale_details {
+    border-radius: 0;
+    padding: 30px 15px;
+    overflow-x: hidden;
+  }
+  main .presale_details .avatar-top {
+    display: none;
+  }
+  main .presale_details .top .title-box h2,
+  main .presale_details .top .title-box p {
+    font-size: 32px;
+    text-wrap: nowrap;
+  }
+  main .presale_details .top .referal-box {
+    padding: 10px;
+  }
+  main .presale_details .top .referal-box .referal {
+    font-size: 12px;
+  }
+  main .presale_details .bottom .bonus-title p {
+    font-size: 24px;
+    text-align: center;
+  }
+  main .presale_details .bottom .bonus-info p {
+    font-size: 16px;
+  }
+  main .presale_details .bottom .bonus-rounds {
+    flex-direction: column;
+    gap: 15px;
+  }
+  main .presale_details .bottom .bonus-rounds .bonus-round {
+    max-width: 300px;
+  }
+  main .explained .box img:first-child {
+    max-width: 250px;
+    position: relative;
+    top: -50px;
+    z-index: 1;
+  }
+  main .explained .box .bg {
+    max-width: 350px;
+    top: -140px;
+  }
+  main .roadmap .title-box img {
+    max-width: 350px;
+  }
+  main .roadmap .title-box .title-text-box h2,
+  main .roadmap .title-box .title-text-box p {
+    font-size: 32px;
+  }
+  main .roadmap .container {
+    gap: 0px;
+  }
+  main .roadmap .container .roadmap-box {
+    background-size: contain;
+    gap: 30px;
+  }
+  main .roadmap .container .roadmap-box::before {
+    display: none;
+  }
+  main .roadmap .container .roadmap-box img {
+    bottom: -30px;
+  }
+  main .roadmap .container .roadmap-box .title-box {
+    padding-top: 120px;
+  }
+  main .roadmap .container .roadmap-box .title-box .cart_count,
+  main .roadmap .container .roadmap-box .title-box .cart_title {
+    font-size: 38px;
+  }
+  main .roadmap .container .roadmap-box .description {
+    font-size: 18px;
+    text-align: center;
+    max-width: 260px;
+  }
+  main .icdrmnomics {
+    border-radius: 0;
+  }
+  main .icdrmnomics .title-box h2 {
+    font-size: 40px;
+  }
+  main .icdrmnomics .title-box .about {
+    font-size: 30px;
+  }
+  main .icdrmnomics .title-box .sisdrm_coins {
+    bottom: -60px;
+    max-width: 290px;
+    height: 50px;
+  }
+  main .icdrmnomics .title-box .sisdrm_coins p {
+    font-size: 24px;
+  }
+  main .icdrmnomics .img-box {
+    width: auto;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  main .icdrmnomics .img-box > img {
+    max-width: 375px;
+  }
+  main .icdrmnomics .img-box .about_cart_position {
+    position: static;
+    width: calc(100% - 30px);
+  }
+  main .icdrmnomics .img-box .about_cart_position .about_cart {
+    width: 100%;
+    border: 4px dashed white;
+    text-align: center;
+  }
+  main .icdrmnomics .img-box .about_cart_position .about_cart .title {
+    font-size: 44px;
+  }
+  main .icdrmnomics .img-box .about_cart_position .about_cart .description {
+    font-size: 26px;
+  }
+  main .icdrmnomics .img-box .about_cart_position .about_cart::before {
+    display: none;
+  }
+  main .icdrmnomics .img-box .about_cart_position .about_cart img {
+    display: none;
+  }
+  .partners .container h2 {
+    font-size: 70px;
+  }
+  .partners .container .partners_box {
+    gap: 25px;
+  }
+  .partners .container .partners_box .partner-cart img {
+    max-width: 280px;
+  }
+  footer .container .social-media-btn {
+    font-size: 32px;
+  }
+  footer .container .social-media-btn img {
+    max-width: 50px;
+  }
+  footer .container .bottom_section img {
+    max-width: 375px;
+  }
+  footer .container .bottom_section h2 {
+    font-size: 32px;
+  }
+  footer .container .bottom_section p {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

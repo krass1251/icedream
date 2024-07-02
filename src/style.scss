@@ -94,6 +94,15 @@ header {
   box-shadow: 0px 4px 16px 0px rgba(0, 104, 141, 0.6);
   backdrop-filter: blur(4px);
 
+  .hiding-content {
+    width: 100%;
+    @include flex(space-between);
+  }
+
+  .hiding-content-btn-toggler {
+    display: none;
+  }
+
   .logo-box {
     max-width: 135px;
     width: 100%;
@@ -1281,3 +1290,6 @@ footer {
     }
   }
 }
+
+
+@import "./assets/@media.scss";

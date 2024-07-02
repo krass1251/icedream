@@ -1,0 +1,374 @@
+@include max-w-media(575px) {
+  .btn-variant-1 {
+    max-width: 150px;
+    font-size: 18px;
+    height: 30px;
+  }
+
+  header {
+    padding: 7px 25px;
+
+    &.opened {
+      border-top-left-radius: 35px;
+      border-top-right-radius: 35px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      box-shadow: none;
+
+      .hiding-content-btn-toggler {
+        span {
+          display: none;
+        }
+
+        &::after,
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        &::after {
+          rotate: 45deg;
+          top: 19px;
+          left: 9px;
+        }
+
+        &::before {
+          rotate: 135deg;
+          left: -10px;
+          top: 18px;
+        }
+      }
+
+      .hiding-content {
+        @include flex(center);
+        @include f-direction(column);
+      }
+    }
+
+    .hiding-content {
+      display: none;
+      position: absolute;
+      top: 72px;
+      left: 0;
+      background: rgba(254, 255, 187, 0.6);
+      backdrop-filter: blur(4px);
+      max-width: 1316px;
+      gap: 15px;
+      border-bottom-left-radius: 35px;
+      border-bottom-right-radius: 35px;
+
+      nav {
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      .btn-variant-1 {
+        margin: 0 auto;
+        margin-bottom: 15px;
+      }
+    }
+
+    .hiding-content-btn-toggler {
+      position: relative;
+      cursor: pointer;
+      width: 27px;
+      height: 20px;
+
+      @include flex(space-between);
+      @include f-direction(column);
+
+      span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: black;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: black;
+      }
+    }
+
+    // @include f-direction(column);
+
+    .btn-variant-1 {
+      font-size: 14px;
+    }
+
+    nav {
+      gap: 15px;
+      width: 100%;
+      justify-content: space-between;
+
+      a {
+        font-size: 14px;
+      }
+    }
+    .logo-box {
+      max-width: 75px;
+    }
+  }
+
+  .hero .top-section {
+    .hero-text {
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      top: 230px;
+    }
+
+    .avatar {
+      width: 360px;
+      right: 0;
+      left: 0;
+      top: -30px;
+      // display: none;
+    }
+  }
+
+  main {
+    .tutorial {
+      .title-box h2,
+      .title-box .title {
+        font-size: 32px;
+      }
+
+      .title-box .title {
+        top: 4px;
+      }
+
+      .subtitle {
+        font-size: 24px;
+      }
+
+      .steps {
+        @include flex(start, center);
+        @include f-direction(column);
+        gap: 25px;
+
+        .step {
+          height: auto;
+        }
+      }
+    }
+
+    .presale_details {
+      border-radius: 0;
+      padding: 30px 15px;
+      overflow-x: hidden;
+
+      .avatar-top {
+        display: none;
+      }
+
+      .top {
+        .title-box {
+          h2,
+          p {
+            font-size: 32px;
+            text-wrap: nowrap;
+          }
+        }
+
+        .referal-box {
+          padding: 10px;
+
+          .referal {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .bottom {
+        .bonus-title p {
+          font-size: 24px;
+          text-align: center;
+        }
+
+        .bonus-info p {
+          font-size: 16px;
+        }
+
+        .bonus-rounds {
+          @include f-direction(column);
+          gap: 15px;
+
+          .bonus-round {
+            max-width: 300px;
+          }
+        }
+      }
+    }
+
+    .explained {
+      .box {
+        img:first-child {
+          max-width: 250px;
+          position: relative;
+          top: -50px;
+          z-index: 1;
+        }
+        .bg {
+          max-width: 350px;
+          top: -140px;
+        }
+      }
+    }
+
+    .roadmap {
+      .title-box {
+        img {
+          max-width: 350px;
+        }
+
+        .title-text-box {
+          h2,
+          p {
+            font-size: 32px;
+          }
+        }
+      }
+
+      .container {
+        gap: 0px;
+
+        .roadmap-box {
+          background-size: contain;
+          gap: 30px;
+
+          &::before {
+            display: none;
+          }
+
+          img {
+            bottom: -30px;
+          }
+
+          .title-box {
+            padding-top: 120px;
+            .cart_count,
+            .cart_title {
+              font-size: 38px;
+            }
+          }
+
+          .description {
+            font-size: 18px;
+            text-align: center;
+            max-width: 260px;
+          }
+        }
+      }
+    }
+
+    .icdrmnomics {
+      border-radius: 0;
+
+      .title-box {
+        h2 {
+          font-size: 40px;
+        }
+
+        .about {
+          font-size: 30px;
+        }
+
+        .sisdrm_coins {
+          bottom: -60px;
+          max-width: 290px;
+          height: 50px;
+
+          p {
+            font-size: 24px;
+          }
+        }
+      }
+
+      .img-box {
+        width: auto;
+        @include flex(start, center);
+        @include f-direction(column);
+        gap: 15px;
+
+        & > img {
+          max-width: 375px;
+        }
+        // display: none;
+        .about_cart_position {
+          position: static;
+          width: calc(100% - 30px);
+
+          .about_cart {
+            width: 100%;
+            border: 4px dashed white;
+            text-align: center;
+
+            .title {
+              font-size: 44px;
+            }
+
+            .description {
+              font-size: 26px;
+            }
+
+            &::before {
+              display: none;
+            }
+
+            img {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .partners {
+    .container {
+      h2 {
+        font-size: 70px;
+      }
+
+      .partners_box {
+        gap: 25px;
+
+        .partner-cart img {
+          max-width: 280px;
+        }
+      }
+    }
+  }
+
+  footer {
+    .container {
+      .social-media-btn {
+        font-size: 32px;
+
+        img {
+          max-width: 50px;
+        }
+      }
+
+      .bottom_section {
+        img {
+          max-width: 375px;
+        }
+
+        h2 {
+          font-size: 32px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
