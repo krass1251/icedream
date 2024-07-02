@@ -1,0 +1,61 @@
+/* FLEX */
+
+@mixin flex($justify_content, $align_items: normal) {
+  justify-content: $justify_content;
+  align-items: $align_items;
+  display: flex;
+}
+
+@mixin width($width, $max-width: none) {
+  width: $width;
+  max-width: $max-width;
+}
+
+@mixin f-direction($direction) {
+  flex-direction: $direction;
+}
+
+@mixin max-w-media($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 0 10px;
+
+  @include max-w-media(500px) {
+  }
+}
+
+@mixin dottedBorder(
+  $color: #8f8f8f,
+  $orientation: horizontal,
+  $position: top,
+  $spacing: 5px,
+  $size: 1px
+) {
+  background-position: $position;
+  @if $orientation == horizontal {
+    background-image: linear-gradient(
+      to right,
+      $color $size/$spacing * 100%,
+      rgba(255, 255, 255, 0) 0%
+    );
+    background-size: $spacing $size;
+    background-repeat: repeat-x;
+  } @else {
+    background-image: linear-gradient(
+      $color $size/$spacing * 100%,
+      rgba(255, 255, 255, 0) 0%
+    );
+    background-size: $size $spacing;
+    background-repeat: repeat-y;
+  }
+  .ie9 & {
+    border-#{$position}: 1px dotted $color;
+  }
+}
