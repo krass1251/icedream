@@ -8,23 +8,27 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <div class="logo-box">
-        <img src="./img/logo.png" alt="Logo" />
-      </div>
-      <button class="hiding-content-btn-toggler">
-        <span></span>
-      </button>
-      <div class="hiding-content">
-        <nav>
-          <a href="">Presale</a>
-          <a href="">Primer</a>
-          <a href="">Roadmap</a>
-          <a href="">FAQ</a>
-        </nav>
-        <button class="btn-variant-1">PRESALE</button>
-      </div>
-    </header>
+    <div class="header__box">
+      <header>
+        <div class="container">
+          <div class="logo-box">
+            <img src="./img/logo.png" alt="Logo" />
+          </div>
+          <div class="hiding-content">
+            <nav>
+              <a href="">Presale</a>
+              <a href="">Primer</a>
+              <a href="">Roadmap</a>
+              <a href="">FAQ</a>
+            </nav>
+          </div>
+          <button class="btn-variant-1 btn-variant-1--header">PRESALE</button>
+          <button class="hiding-content-btn-toggler">
+            <span></span>
+          </button>
+        </div>
+      </header>
+    </div>
     <section class="hero">
       <div class="top-section">
         <img
@@ -34,13 +38,14 @@
         />
         <img class="avatar" src="./img/section-hero/avatar.svg" alt="Avatar" />
       </div>
-      <div class="bottom-section-animated"></div>
+      <div class="bottom-section-animated">
+        <div class="background-animated"></div>
+      </div>
     </section>
     <main>
       <section class="tutorial">
         <div class="title-box">
           <h2>GET $ICDRM IN 4 STEPS</h2>
-          <p class="title">GET $ICDRM IN 4 STEPS</p>
         </div>
         <p class="subtitle">
           IceDream is a community-driven memecoin with a creative take on
@@ -93,7 +98,7 @@
                 <p class="about">
                   After that, you should send up to 200 $SOL from the PHANTOM
                   wallet to the specified presale address that will appear on
-                  the website *название нашого сайта* after the announcement of
+                  the website <a href="http://icedream.fun/">icedream.fun</a> after the announcement of
                   the presale start.
                 </p>
               </div>
@@ -123,15 +128,14 @@
         </div>
       </section>
       <section class="presale_details">
-        <img
-          class="avatar-top"
-          src="./img/presale-details/avatar.svg"
-          alt="avatar"
-        />
         <div class="top">
+          <img
+            class="avatar-top"
+            src="./img/presale-details/avatar.svg"
+            alt="avatar"
+          />
           <div class="title-box">
             <h2>PRESALE DETAILS</h2>
-            <p>PRESALE DETAILS</p>
           </div>
           <div class="referal-box">
             <p class="referal">TEXGFDFDBDFDFNCNCND</p>
@@ -205,84 +209,31 @@
       </section>
       <section class="explained">
         <div class="box">
-          <img src="./img/explained/avatar_explained.svg" alt="explained" />
+          <div class="explained-img__box">
+            <img
+                    class="explained-img__bg"
+                    src="./img/explained/explained_bg.svg"
+                    alt="explained bg"
+            />
+            <img src="./img/explained/avatar_explained-ice.svg" alt="explained" class="explained-img explained-img--ice"/>
+            <img src="./img/explained/avatar_explained-text.svg" alt="explained" class="explained-img explained-img--text"/>
+          </div>
           <div class="info">
             <p class="contact">
-              Send offers to 
-              <a class="important" href="mailto:icedreamcoin@gmail.com"
-                >icedreamcoin@gmail.com</a
+              Send offers to <a class="important" href="mailto:icedreamcoin@gmail.com">icedreamcoin@gmail.com</a
               >
             </p>
-            <p class="ad important">This text could be your ad.</p>
           </div>
-          <img
-            class="bg"
-            src="./img/explained/explained_bg.svg"
-            alt="explained bg"
-          />
-          <!-- <div class="about-box cooldown">
-            <div class="about">
-              <img src="./img/explained/cooldown_bg.svg" alt="cool down bg" />
-              <p class="about-title">cool down</p>
-            </div>
-          </div>
-          <div class="about-box bring">
-            <div class="about">
-              <img
-                src="./img/explained/bring_to_life_bg.svg"
-                alt="cool down bg"
-              />
-              <p class="about-title">bring to life</p>
-            </div>
-          </div>
-          <div class="about-box cause">
-            <div class="about">
-              <img
-                src="./img/explained/cause_feeling_of_delight_bg.svg"
-                alt="cool down bg"
-              />
-              <p class="about-title">cause a feeling of delight</p>
-            </div>
-          </div>
-          <div class="about-box cools">
-            <div class="about">
-              <img
-                src="./img/explained/cools_the_mind_bg.svg"
-                alt="cool down bg"
-              />
-              <p class="about-title">cools the mind</p>
-            </div>
-          </div>
-
-          <div class="about-box makes">
-            <div class="about">
-              <img
-                src="./img/explained/makes_people_happier_bg.svg"
-                alt="cool down bg"
-              />
-              <p class="about-title">makes people happier</p>
-            </div>
-          </div>
-          <div class="about-box">
-            <div class="about raises">
-              <img
-                src="./img/explained/raise_dopam_levels_bg.svg"
-                alt="cool down bg"
-              />
-              <p class="about-title">raises dopamine levels</p>
-            </div>
-          </div> -->
         </div>
       </section>
       <div class="sectioning">
-        <div class="bottom-section-animated"></div>
+        <div class="bottom-section-animated"><div class="background-animated"></div></div>
       </div>
       <section class="roadmap">
         <div class="title-box">
           <img src="./img/roadmap/title_roadmap.svg" alt="Roadmap" />
           <div class="title-text-box">
             <h2 class="title">ROAD MAP</h2>
-            <p>ROAD MAP</p>
           </div>
         </div>
         <div class="container">
@@ -362,7 +313,7 @@
       </section>
       <section class="icdrmnomics">
         <div class="title-box">
-          <h2>ICDRMNOMICS</h2>
+          <h2 class="title">ICDRMNOMICS</h2>
           <p class="about">55.555.555.555</p>
           <div class="sisdrm_coins">
             <p>$ISDRM COINS</p>
@@ -415,28 +366,28 @@
         </div>
       </section>
       <div class="sectioning">
-        <div class="bottom-section-animated"></div>
+        <div class="bottom-section-animated"><div class="background-animated"></div></div>
       </div>
     </main>
-    <section class="partners">
-      <div class="container">
-        <h2>partners</h2>
-        <div class="partners_box">
-          <div class="partner-cart">
-            <img src="./img/partners/Partner.svg" alt="partner" />
-          </div>
-          <div class="partner-cart">
-            <img src="./img/partners/Partner.svg" alt="partner" />
-          </div>
-          <div class="partner-cart">
-            <img src="./img/partners/Partner.svg" alt="partner" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="sectioning">
-      <div class="bottom-section-animated"></div>
-    </div>
+<!--    <section class="partners">-->
+<!--      <div class="container">-->
+<!--        <h2>partners</h2>-->
+<!--        <div class="partners_box">-->
+<!--          <div class="partner-cart">-->
+<!--            <img src="./img/partners/Partner.svg" alt="partner" />-->
+<!--          </div>-->
+<!--          <div class="partner-cart">-->
+<!--            <img src="./img/partners/Partner.svg" alt="partner" />-->
+<!--          </div>-->
+<!--          <div class="partner-cart">-->
+<!--            <img src="./img/partners/Partner.svg" alt="partner" />-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
+<!--    <div class="sectioning">-->
+<!--      <div class="bottom-section-animated"><div class="background-animated"></div></div>-->
+<!--    </div>-->
     <footer>
       <div class="container">
         <div class="top_section">
@@ -475,7 +426,7 @@
           </p>
 
           <p class="copyright">
-            2024, ICE DREAM. Design by ICEDREAM CO. All Rights Reserved (LOL).
+            2024, ICE DREAM. Design by ICEDREAM CO. All Rights Reserved.
           </p>
         </div>
       </div>
