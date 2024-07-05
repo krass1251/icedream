@@ -15,7 +15,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 0;
 }
 
 * {
@@ -44,7 +44,7 @@ button {
   height: 66px;
   border-radius: 100px;
   background: linear-gradient(180deg, #00f2ff 0%, #0b58bd 100%);
-  box-shadow: 0px 2.063px 0px 0px #7bf7ff inset, 0px 4px 0px 0px #03448d;
+  box-shadow: 0 2.063px 0 0 #7bf7ff inset, 0 4px 0 0 #03448d;
   color: var(--white);
   font-size: 32px;
   font-style: normal;
@@ -78,7 +78,7 @@ header {
   margin: 0 auto;
   border-radius: 60px;
   background: rgba(254, 255, 187, 0.6);
-  box-shadow: 0px 4px 16px 0px rgba(0, 104, 141, 0.6);
+  box-shadow: 0 4px 16px 0 rgba(0, 104, 141, 0.6);
   backdrop-filter: blur(4px);
 }
 header .container {
@@ -290,7 +290,7 @@ main .tutorial .title-box {
 main .tutorial .title-box h2 {
   text-align: center;
   color: var(--white);
-  text-shadow: 6px 6px 0px #003a5e;
+  text-shadow: 6px 6px 0 #003a5e;
   font-size: 72px;
   font-style: normal;
   font-weight: 400;
@@ -516,7 +516,7 @@ main .presale_details .top .title-box {
 }
 main .presale_details .top .title-box h2 {
   text-align: center;
-  text-shadow: 6px 6px 0px #003a5e;
+  text-shadow: 6px 6px 0 #003a5e;
   color: var(--white);
   font-size: 72px;
   font-style: normal;
@@ -619,7 +619,7 @@ main .presale_details .bottom .bonus-rounds .bonus-round {
   padding: 24px;
   border-radius: 24px;
   background: #070570;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 @media screen and (max-width: 1200px) {
   main .presale_details .bottom .bonus-rounds .bonus-round {
@@ -835,7 +835,7 @@ main .roadmap .title-box .title-text-box {
 main .roadmap .title-box .title-text-box .title {
   text-align: center;
   color: var(--white);
-  text-shadow: 6px 6px 0px #003a5e;
+  text-shadow: 6px 6px 0 #003a5e;
   font-size: 128px;
   font-style: normal;
   font-weight: 400;
@@ -932,7 +932,7 @@ main .roadmap .container .roadmap-box .description {
   max-width: 430px;
   width: 100%;
   color: var(--white);
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
@@ -966,7 +966,7 @@ main .icdrmnomics {
   padding: 40px 20px;
   border-radius: 32px;
   background: rgba(254, 255, 184, 0.3);
-  box-shadow: 0px 8px 16px 0px rgba(0, 24, 103, 0.3);
+  box-shadow: 0 8px 16px 0 rgba(0, 24, 103, 0.3);
   backdrop-filter: blur(12px);
 }
 main .icdrmnomics .title-box {
@@ -981,7 +981,7 @@ main .icdrmnomics .title-box {
 }
 main .icdrmnomics .title-box .title {
   color: rgb(194, 137, 6);
-  text-shadow: 4px 2px 0px rgb(114, 81, 4);
+  text-shadow: 4px 2px 0 rgb(114, 81, 4);
   font-family: var(--font-secondary);
   font-size: 128px;
   font-style: normal;
@@ -994,7 +994,7 @@ main .icdrmnomics .title-box .title {
 }
 main .icdrmnomics .title-box .about {
   color: #7fc9ff;
-  text-shadow: 6px 2px 0px rgb(114, 81, 4);
+  text-shadow: 6px 2px 0 rgb(114, 81, 4);
   font-family: var(--font-secondary);
   font-size: 140px;
   font-style: normal;
@@ -1021,7 +1021,7 @@ main .icdrmnomics .title-box .sisdrm_coins {
   height: 80px;
   border-radius: 60px;
   background: #fdf301;
-  box-shadow: 0px 4px 4px 0px rgba(126, 87, 0, 0.6);
+  box-shadow: 0 4px 4px 0 rgba(126, 87, 0, 0.6);
 }
 @media screen and (max-width: 900px) {
   main .icdrmnomics .title-box .sisdrm_coins {
@@ -1032,7 +1032,7 @@ main .icdrmnomics .title-box .sisdrm_coins {
 }
 main .icdrmnomics .title-box .sisdrm_coins p {
   color: rgba(194, 137, 6, 0.8);
-  text-shadow: 1px 2px 0px rgb(114, 81, 4);
+  text-shadow: 1px 2px 0 rgb(114, 81, 4);
   font-family: var(--font-secondary);
   font-size: 40px;
   font-style: normal;
@@ -1234,7 +1234,7 @@ main .icdrmnomics .img-box .about_cart_position .about_cart {
 }
 main .icdrmnomics .img-box .about_cart_position .about_cart .title {
   color: #ce9817;
-  text-shadow: 1px 2px 0px rgb(114, 81, 4);
+  text-shadow: 1px 2px 0 rgb(114, 81, 4);
   font-family: var(--font-secondary);
   font-size: 64px;
   font-style: normal;
@@ -1295,7 +1295,7 @@ main .icdrmnomics .img-box .about_cart_position .about_cart img {
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
-  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.8);
+  text-shadow: 6px 6px 0 rgba(0, 0, 0, 0.8);
   text-transform: uppercase;
 }
 @media screen and (max-width: 800px) {
@@ -1323,7 +1323,7 @@ main .icdrmnomics .img-box .about_cart_position .about_cart img {
   width: 100%;
   padding: 26px 0;
   border-radius: 60px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 4, 95, 0.55) inset;
+  box-shadow: 0 4px 4px 0 rgba(0, 4, 95, 0.55) inset;
   color: var(--white);
   font-family: var(--font-main);
   font-size: 38px;
@@ -1401,7 +1401,7 @@ footer .container .bottom_section h2 {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  text-shadow: 6px 3px 0px #0681a8;
+  text-shadow: 6px 3px 0 #0681a8;
 }
 footer .container .bottom_section .important {
   color: var(--black);
@@ -1422,7 +1422,7 @@ footer .container .bottom_section p {
 }
 footer .container .bottom_section .copyright {
   color: #01004a;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   font-family: Montserrat;
   font-size: 18px;
   font-style: normal;

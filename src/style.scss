@@ -18,7 +18,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 0;
 }
 
 * {
@@ -46,7 +46,7 @@ button {
 
   border-radius: 100px;
   background: linear-gradient(180deg, #00f2ff 0%, #0b58bd 100%);
-  box-shadow: 0px 2.063px 0px 0px #7bf7ff inset, 0px 4px 0px 0px #03448d;
+  box-shadow: 0 2.063px 0 0 #7bf7ff inset, 0 4px 0 0 #03448d;
 
   color: var(--white);
 
@@ -83,7 +83,7 @@ header {
 
   border-radius: 60px;
   background: rgba(254, 255, 187, 0.6);
-  box-shadow: 0px 4px 16px 0px rgba(0, 104, 141, 0.6);
+  box-shadow: 0 4px 16px 0 rgba(0, 104, 141, 0.6);
   backdrop-filter: blur(4px);
 
   .container {
@@ -308,7 +308,7 @@ main {
       h2 {
         text-align: center;
         color: var(--white);
-        text-shadow: 6px 6px 0px #003a5e;
+        text-shadow: 6px 6px 0 #003a5e;
         font-size: 72px;
         font-style: normal;
         font-weight: 400;
@@ -540,7 +540,7 @@ main {
 
         h2 {
           text-align: center;
-          text-shadow: 6px 6px 0px #003a5e;
+          text-shadow: 6px 6px 0 #003a5e;
           color: var(--white);
           font-size: 72px;
           font-style: normal;
@@ -651,7 +651,7 @@ main {
           border-radius: 24px;
           background: #070570;
 
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 
           @include max-w-media(1200px) {
             width: calc(33% - 15px);
@@ -876,7 +876,7 @@ main {
         .title {
           text-align: center;
           color: var(--white);
-          text-shadow: 6px 6px 0px #003a5e;
+          text-shadow: 6px 6px 0 #003a5e;
           font-size: 128px;
           font-style: normal;
           font-weight: 400;
@@ -983,7 +983,7 @@ main {
           width: 100%;
           color: var(--white);
 
-          text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
           font-size: 28px;
           font-style: normal;
           font-weight: 500;
@@ -1020,7 +1020,7 @@ main {
     border-radius: 32px;
     background: rgba(254, 255, 184, 0.3);
 
-    box-shadow: 0px 8px 16px 0px rgba(0, 24, 103, 0.3);
+    box-shadow: 0 8px 16px 0 rgba(0, 24, 103, 0.3);
     backdrop-filter: blur(12px);
 
     .title-box {
@@ -1035,7 +1035,7 @@ main {
 
       .title {
         color: rgba(194, 137, 6, 1);
-        text-shadow: 4px 2px 0px rgb(114 81 4);
+        text-shadow: 4px 2px 0 rgb(114 81 4);
         font-family: var(--font-secondary);
         font-size: 128px;
         font-style: normal;
@@ -1048,7 +1048,7 @@ main {
 
       .about {
         color: #7fc9ff;
-        text-shadow: 6px 2px 0px rgb(114 81 4);
+        text-shadow: 6px 2px 0 rgb(114 81 4);
         font-family: var(--font-secondary);
         font-size: 140px;
         font-style: normal;
@@ -1076,7 +1076,7 @@ main {
         border-radius: 60px;
         background: #fdf301;
 
-        box-shadow: 0px 4px 4px 0px rgba(126, 87, 0, 0.6);
+        box-shadow: 0 4px 4px 0 rgba(126, 87, 0, 0.6);
 
         @include max-w-media(900px) {
           right: 50%;
@@ -1086,7 +1086,7 @@ main {
 
         p {
           color: rgba(194, 137, 6, 0.8);
-          text-shadow: 1px 2px 0px rgb(114 81 4);
+          text-shadow: 1px 2px 0 rgb(114 81 4);
 
           font-family: var(--font-secondary);
           font-size: 40px;
@@ -1328,7 +1328,7 @@ main {
 
           .title {
             color: #ce9817;
-            text-shadow: 1px 2px 0px rgb(114 81 4);
+            text-shadow: 1px 2px 0 rgb(114 81 4);
 
             font-family: var(--font-secondary);
             font-size: 64px;
@@ -1395,7 +1395,7 @@ main {
       font-weight: 400;
       line-height: normal;
       text-transform: uppercase;
-      text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.8);
+      text-shadow: 6px 6px 0 rgba(0, 0, 0, 0.8);
       text-transform: uppercase;
 
 
@@ -1426,7 +1426,7 @@ main {
   padding: 26px 0;
 
   border-radius: 60px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 4, 95, 0.55) inset;
+  box-shadow: 0 4px 4px 0 rgba(0, 4, 95, 0.55) inset;
   color: var(--white);
 
   font-family: var(--font-main);
@@ -1500,7 +1500,7 @@ footer {
         font-weight: 700;
         line-height: normal;
         text-transform: uppercase;
-        text-shadow: 6px 3px 0px #0681a8;
+        text-shadow: 6px 3px 0 #0681a8;
       }
 
       .important {
@@ -1524,7 +1524,7 @@ footer {
 
       .copyright {
         color: #01004a;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         font-family: Montserrat;
         font-size: 18px;
         font-style: normal;
