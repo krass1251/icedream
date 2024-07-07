@@ -144,8 +144,8 @@ header {
 
       @include max-w-media(800px) {
         height: 37px;
-        font-size: 19px;
-        display: block;
+        font-size: 14px;
+        display: flex;
       }
     }
   }
@@ -1044,6 +1044,10 @@ main {
         @include max-w-media(900px) {
           font-size: 80px;
         }
+
+        @include max-w-media(575px) {
+          font-size: 45px;
+        }
       }
 
       .about {
@@ -1108,6 +1112,10 @@ main {
 
       @include max-w-media(1200px) {
         margin-top: 35px;
+      }
+
+      @include max-w-media(575px) {
+        max-width: none;
       }
 
       img {
