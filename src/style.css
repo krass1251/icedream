@@ -582,6 +582,9 @@ main .presale_details .bottom .bonus-title img {
   width: 80px;
   height: 80px;
 }
+main .presale_details .bottom .bonus-title img:last-child {
+  transform: scaleX(-1) rotate(45deg);
+}
 main .presale_details .bottom .bonus-info {
   justify-content: center;
   align-items: center;
@@ -849,7 +852,7 @@ main .roadmap .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 80px 200px;
+  gap: 30px 200px;
 }
 main .roadmap .container .roadmap-box {
   justify-content: flex-start;
@@ -864,6 +867,7 @@ main .roadmap .container .roadmap-box {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  filter: drop-shadow(0px 8px 16px rgba(0, 77, 59, 0.6));
 }
 main .roadmap .container .roadmap-box:nth-child(even) {
   margin-top: 80px;
@@ -921,6 +925,7 @@ main .roadmap .container .roadmap-box .title-box {
 }
 main .roadmap .container .roadmap-box .title-box .cart_count,
 main .roadmap .container .roadmap-box .title-box .cart_title {
+  position: relative;
   color: #1e7ee1;
   font-family: var(--font-secondary);
   font-size: 64px;
@@ -945,10 +950,10 @@ main .roadmap .container .roadmap-box img {
   right: 0;
   z-index: 1;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1440px) {
   main .roadmap .container .roadmap-box img {
     width: 150px;
-    height: 150px;
+    object-fit: contain;
   }
 }
 main .icdrmnomics {
