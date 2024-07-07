@@ -155,7 +155,7 @@ header .btn-variant-1.btn-variant-1--header {
   width: 100%;
   height: 721px;
   position: relative;
-  background-image: url("./img/section-hero/hero-bg.svg");
+  background-image: url("./img/section-hero/hero-bg.webp");
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -259,7 +259,7 @@ header .btn-variant-1.btn-variant-1--header {
   left: 0;
   width: 200%; /* Ensure the background can slide across the entire width */
   height: 100%;
-  background-image: url("./img/section-hero/ice-dream-bottom.svg");
+  background-image: url("./img/section-hero/ice-dream-bottom.webp");
   background-repeat: repeat-x;
   background-position: 0 center;
   animation: moveBackground 20s linear infinite;
@@ -268,7 +268,7 @@ header .btn-variant-1.btn-variant-1--header {
 main {
   width: 100%;
   height: 100%;
-  background-image: url(./img/main-bg.svg);
+  background-image: url(./img/main-bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -860,7 +860,7 @@ main .roadmap .container .roadmap-box {
   position: relative;
   width: 556px;
   height: 500px;
-  background-image: url(./img/roadmap/cart_bg.svg);
+  background-image: url(./img/roadmap/cart_bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -881,7 +881,7 @@ main .roadmap .container .roadmap-box:nth-child(even)::before {
   transform: rotate(53deg);
   width: 180px;
   height: 180px;
-  background-image: url(./img/roadmap/arrow.svg);
+  background-image: url(./img/roadmap/arrow.webp);
 }
 @media screen and (max-width: 1300px) {
   main .roadmap .container .roadmap-box:nth-child(even)::before {
@@ -1087,7 +1087,7 @@ main .icdrmnomics .img-box .about_cart_position.first .about_cart::before {
   height: 120px;
   left: 50%;
   top: 100%;
-  background-image: url(./img/icdrmnomics/arrows/1.svg);
+  background-image: url(./img/icdrmnomics/arrows/1.webp);
 }
 main .icdrmnomics .img-box .about_cart_position.second {
   top: 45%;
@@ -1107,7 +1107,7 @@ main .icdrmnomics .img-box .about_cart_position.second .about_cart::before {
   left: 95%;
   top: calc(50% - 21px);
   transform: translateY(-50%);
-  background-image: url(./img/icdrmnomics/arrows/2.svg);
+  background-image: url(./img/icdrmnomics/arrows/2.webp);
 }
 @media screen and (max-width: 800px) {
   main .icdrmnomics .img-box .about_cart_position.second .about_cart::before {
@@ -1131,7 +1131,7 @@ main .icdrmnomics .img-box .about_cart_position.third .about_cart::before {
   height: 32px;
   right: -154px;
   bottom: 20px;
-  background-image: url(./img/icdrmnomics/arrows/3.svg);
+  background-image: url(./img/icdrmnomics/arrows/3.webp);
 }
 main .icdrmnomics .img-box .about_cart_position.fourth {
   top: 20px;
@@ -1159,7 +1159,7 @@ main .icdrmnomics .img-box .about_cart_position.fourth .about_cart::before {
   height: 102px;
   left: 20%;
   bottom: -102px;
-  background-image: url(./img/icdrmnomics/arrows/4.svg);
+  background-image: url(./img/icdrmnomics/arrows/4.webp);
 }
 @media screen and (max-width: 800px) {
   main .icdrmnomics .img-box .about_cart_position.fourth .about_cart::before {
@@ -1189,7 +1189,7 @@ main .icdrmnomics .img-box .about_cart_position.fifth .about_cart::before {
   height: 32px;
   left: -154px;
   bottom: 20px;
-  background-image: url(./img/icdrmnomics/arrows/5.svg);
+  background-image: url(./img/icdrmnomics/arrows/5.webp);
 }
 main .icdrmnomics .img-box .about_cart_position.sixth {
   bottom: 20px;
@@ -1213,7 +1213,7 @@ main .icdrmnomics .img-box .about_cart_position.sixth .about_cart::before {
   height: 32px;
   left: -154px;
   bottom: 20px;
-  background-image: url(./img/icdrmnomics/arrows/6.svg);
+  background-image: url(./img/icdrmnomics/arrows/6.webp);
 }
 main .icdrmnomics .img-box .about_cart_position .about_cart {
   justify-content: center;
@@ -1274,7 +1274,7 @@ main .icdrmnomics .img-box .about_cart_position .about_cart img {
   width: 100%;
   padding: 60px 0;
   background-color: #45b8e6;
-  background-image: url(./img/partners/bg.svg);
+  background-image: url(./img/partners/bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1353,7 +1353,7 @@ main .icdrmnomics .img-box .about_cart_position .about_cart img {
 footer {
   width: 100%;
   height: 100%;
-  background-image: url(./img/footer/bg.svg);
+  background-image: url(./img/footer/bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
