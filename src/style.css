@@ -137,8 +137,8 @@ header .btn-variant-1.btn-variant-1--header {
 @media screen and (max-width: 800px) {
   header .btn-variant-1.btn-variant-1--header {
     height: 37px;
-    font-size: 19px;
-    display: block;
+    font-size: 14px;
+    display: flex;
   }
 }
 
@@ -997,6 +997,11 @@ main .icdrmnomics .title-box .title {
     font-size: 80px;
   }
 }
+@media screen and (max-width: 575px) {
+  main .icdrmnomics .title-box .title {
+    font-size: 45px;
+  }
+}
 main .icdrmnomics .title-box .about {
   color: #7fc9ff;
   text-shadow: 6px 2px 0 rgb(114, 81, 4);
@@ -1055,6 +1060,11 @@ main .icdrmnomics .img-box {
 @media screen and (max-width: 1200px) {
   main .icdrmnomics .img-box {
     margin-top: 35px;
+  }
+}
+@media screen and (max-width: 575px) {
+  main .icdrmnomics .img-box {
+    max-width: none;
   }
 }
 main .icdrmnomics .img-box img {
