@@ -155,7 +155,7 @@ header .btn-variant-1.btn-variant-1--header {
   width: 100%;
   height: 721px;
   position: relative;
-  background-image: url("./img/section-hero/hero-bg.svg");
+  background-image: url("./img/section-hero/hero-bg.webp");
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -259,7 +259,7 @@ header .btn-variant-1.btn-variant-1--header {
   left: 0;
   width: 200%; /* Ensure the background can slide across the entire width */
   height: 100%;
-  background-image: url("./img/section-hero/ice-dream-bottom.svg");
+  background-image: url("./img/section-hero/ice-dream-bottom.webp");
   background-repeat: repeat-x;
   background-position: 0 center;
   animation: moveBackground 20s linear infinite;
@@ -268,7 +268,7 @@ header .btn-variant-1.btn-variant-1--header {
 main {
   width: 100%;
   height: 100%;
-  background-image: url(./img/main-bg.svg);
+  background-image: url(./img/main-bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -582,6 +582,9 @@ main .presale_details .bottom .bonus-title img {
   width: 80px;
   height: 80px;
 }
+main .presale_details .bottom .bonus-title img:last-child {
+  transform: scaleX(-1) rotate(45deg);
+}
 main .presale_details .bottom .bonus-info {
   justify-content: center;
   align-items: center;
@@ -849,7 +852,7 @@ main .roadmap .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 80px 200px;
+  gap: 30px 200px;
 }
 main .roadmap .container .roadmap-box {
   justify-content: flex-start;
@@ -860,10 +863,11 @@ main .roadmap .container .roadmap-box {
   position: relative;
   width: 556px;
   height: 500px;
-  background-image: url(./img/roadmap/cart_bg.svg);
+  background-image: url(./img/roadmap/cart_bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  filter: drop-shadow(0px 8px 16px rgba(0, 77, 59, 0.6));
 }
 main .roadmap .container .roadmap-box:nth-child(even) {
   margin-top: 80px;
@@ -881,7 +885,7 @@ main .roadmap .container .roadmap-box:nth-child(even)::before {
   transform: rotate(53deg);
   width: 180px;
   height: 180px;
-  background-image: url(./img/roadmap/arrow.svg);
+  background-image: url(./img/roadmap/arrow.webp);
 }
 @media screen and (max-width: 1300px) {
   main .roadmap .container .roadmap-box:nth-child(even)::before {
@@ -921,6 +925,7 @@ main .roadmap .container .roadmap-box .title-box {
 }
 main .roadmap .container .roadmap-box .title-box .cart_count,
 main .roadmap .container .roadmap-box .title-box .cart_title {
+  position: relative;
   color: #1e7ee1;
   font-family: var(--font-secondary);
   font-size: 64px;
@@ -945,10 +950,10 @@ main .roadmap .container .roadmap-box img {
   right: 0;
   z-index: 1;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1440px) {
   main .roadmap .container .roadmap-box img {
     width: 150px;
-    height: 150px;
+    object-fit: contain;
   }
 }
 main .icdrmnomics {
@@ -1097,7 +1102,7 @@ main .icdrmnomics .img-box .about_cart_position.first .about_cart::before {
   height: 120px;
   left: 50%;
   top: 100%;
-  background-image: url(./img/icdrmnomics/arrows/1.svg);
+  background-image: url(./img/icdrmnomics/arrows/1.webp);
 }
 main .icdrmnomics .img-box .about_cart_position.second {
   top: 45%;
@@ -1117,7 +1122,7 @@ main .icdrmnomics .img-box .about_cart_position.second .about_cart::before {
   left: 95%;
   top: calc(50% - 21px);
   transform: translateY(-50%);
-  background-image: url(./img/icdrmnomics/arrows/2.svg);
+  background-image: url(./img/icdrmnomics/arrows/2.webp);
 }
 @media screen and (max-width: 800px) {
   main .icdrmnomics .img-box .about_cart_position.second .about_cart::before {
@@ -1141,7 +1146,7 @@ main .icdrmnomics .img-box .about_cart_position.third .about_cart::before {
   height: 32px;
   right: -154px;
   bottom: 20px;
-  background-image: url(./img/icdrmnomics/arrows/3.svg);
+  background-image: url(./img/icdrmnomics/arrows/3.webp);
 }
 main .icdrmnomics .img-box .about_cart_position.fourth {
   top: 20px;
@@ -1169,7 +1174,7 @@ main .icdrmnomics .img-box .about_cart_position.fourth .about_cart::before {
   height: 102px;
   left: 20%;
   bottom: -102px;
-  background-image: url(./img/icdrmnomics/arrows/4.svg);
+  background-image: url(./img/icdrmnomics/arrows/4.webp);
 }
 @media screen and (max-width: 800px) {
   main .icdrmnomics .img-box .about_cart_position.fourth .about_cart::before {
@@ -1199,7 +1204,7 @@ main .icdrmnomics .img-box .about_cart_position.fifth .about_cart::before {
   height: 32px;
   left: -154px;
   bottom: 20px;
-  background-image: url(./img/icdrmnomics/arrows/5.svg);
+  background-image: url(./img/icdrmnomics/arrows/5.webp);
 }
 main .icdrmnomics .img-box .about_cart_position.sixth {
   bottom: 20px;
@@ -1223,7 +1228,7 @@ main .icdrmnomics .img-box .about_cart_position.sixth .about_cart::before {
   height: 32px;
   left: -154px;
   bottom: 20px;
-  background-image: url(./img/icdrmnomics/arrows/6.svg);
+  background-image: url(./img/icdrmnomics/arrows/6.webp);
 }
 main .icdrmnomics .img-box .about_cart_position .about_cart {
   justify-content: center;
@@ -1284,7 +1289,7 @@ main .icdrmnomics .img-box .about_cart_position .about_cart img {
   width: 100%;
   padding: 60px 0;
   background-color: #45b8e6;
-  background-image: url(./img/partners/bg.svg);
+  background-image: url(./img/partners/bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1363,7 +1368,7 @@ main .icdrmnomics .img-box .about_cart_position .about_cart img {
 footer {
   width: 100%;
   height: 100%;
-  background-image: url(./img/footer/bg.svg);
+  background-image: url(./img/footer/bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
