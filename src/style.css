@@ -549,10 +549,20 @@ main .presale_details .top .referal-box .btn-variant-1 {
 }
 main .presale_details .top .referal-box .referal {
   color: var(--black);
-  font-size: 32px;
+  font-size: 21px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+@media screen and (max-width: 900px) {
+  main .presale_details .top .referal-box .referal {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 575px) {
+  main .presale_details .top .referal-box .referal {
+    font-size: 12px;
+  }
 }
 main .presale_details .bottom {
   justify-content: center;
@@ -1283,6 +1293,43 @@ main .icdrmnomics .img-box .about_cart_position .about_cart img {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.progress-bar {
+  width: 100%;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 14px;
+  padding: 2px;
+}
+.progress-bar__line {
+  height: 24px;
+  border-radius: 12px;
+  background-color: #200077;
+}
+
+.progress-bar-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: var(--white);
+  text-align: center;
+  font-family: var(--font-main);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media screen and (max-width: 900px) {
+  .progress-bar-desc {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .progress-bar-desc {
+    font-size: 18px;
+  }
 }
 
 .partners {
